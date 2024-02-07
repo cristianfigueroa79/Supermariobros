@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2? family= Nova+Cut & display=swap');
+*{
+    box-sizing: border-box;
+}
+html.body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 130px;
+    font-family:"Nova+Cut & display=swap";
+    animation-name: mover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes mover{
+    30%{
+        transform: scale(0,1);
+    }
+}
+
+
+
+.capa1{
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    z-index: 0;
+    animation-name: rotar;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotar{
+    15%{
+        margin-top: 25%;
+    }
+     60%{
+           transform: rotate(360deg);
+       }
+    }
+
+
+.capa2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
